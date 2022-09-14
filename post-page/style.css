@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.content__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 2px solid black;
+    position: sticky;
+}
+
+
+
+.header__nav--logo {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-image: url(../bars.svg);
+    position: absolute;
+    right: 0;
+}
+
+.header__name {
+    margin-left: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: black;
+    
+}
+.header__nav--logo {
+    margin-right: 30px;
+}
+
+.header__nav--bar {
+    display: flex;
+
+}
+
+.header__nav--bar p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 24px;
+    padding-right: 50px;
+    display: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 
+    ! Fundamental para que los saltos de línea los tenga en cuenta.
+    */
+    white-space: pre-line;
+}
+
+.text__section {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__title {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.section__title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.section__paragraph p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 800px) {
+    .header__nav--logo {
+        display: none;
+    }
+    .header__nav--bar p {
+        display: flex;
+    }
+    .text__section {
+        max-width: 760px;
+    }
+    .section__title h1 {
+        font-size: 25px;
+
+    }
+
+    .section__paragraph p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .section__title h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .section__paragraph p {
+        font-size: 16px;
+
+    }
+}
